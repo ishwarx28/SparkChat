@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item>
+        <shape android:shape="rectangle" android:padding="10dp">
+            <corners
+                android:radius="700dp"/>
+            <solid android:color="@color/colorAccent"/>
+        </shape>
+    </item>
+    <item 
+        android:left="@dimen/secondary_padding"
+        android:top="@dimen/medium_padding"
+        android:right="@dimen/secondary_padding"
+        android:bottom="@dimen/secondary_padding"
+        android:drawable="@drawable/ic_app_data" />
+</layer-list>

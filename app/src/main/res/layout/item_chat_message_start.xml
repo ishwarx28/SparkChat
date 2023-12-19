@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2023 Ishwar Meghwal
+  ~
+  ~ All Right Reserved.
+  ~
+  ~ SparkChat is a registered trademark of Ishwar Meghwal.
+  ~ Unauthorized use or reproduction of this software or it's components prohibited by applicable law.
+  -->
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingEnd="@dimen/medium_padding"
+    android:paddingTop="@dimen/primary_padding" >
+
+    <org.ishwar.sparkchat.views.CircleImageView
+        android:id="@+id/profile_image"
+        android:layout_width="?attr/actionBarSize"
+        android:layout_height="?attr/actionBarSize"
+        android:src="@drawable/profile_img_holder"
+        android:paddingStart="@dimen/medium_padding"
+        android:paddingEnd="@dimen/primary_padding"
+        app:civ_border_width="0dp"
+        app:layout_constraintEnd_toStartOf="@id/username"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/username"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorAccent"
+        android:fontFamily="@font/roboto_medium"
+        android:textSize="@dimen/secondary_text_size"
+        android:paddingTop="@dimen/primary_padding"
+        android:text="@string/label_deleted_user"
+        app:layout_constraintStart_toEndOf="@id/profile_image"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/message"
+        app:layout_constraintEnd_toStartOf="@id/time"/>
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:textColor="@color/secondaryTextColor"
+        android:fontFamily="@font/roboto_regular"
+        android:text="11:25 AM"
+        android:textSize="@dimen/timestamp_text_size"
+        app:layout_constraintBaseline_toBaselineOf="@id/username"
+        app:layout_constraintStart_toEndOf="@id/username"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/message"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/label_deleted_user"
+        android:textColor="@color/primaryTextColor"
+        android:fontFamily="@font/roboto_regular"
+        android:textSize="@dimen/primary_text_size"
+        app:layout_constraintStart_toStartOf="@id/username"
+        app:layout_constraintTop_toBottomOf="@id/username"
+        app:layout_constraintEnd_toEndOf="@id/time"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

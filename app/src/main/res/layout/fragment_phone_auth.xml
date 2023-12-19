@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2023 Ishwar Meghwal
+  ~
+  ~ All Right Reserved.
+  ~
+  ~ SparkChat is a registered trademark of Ishwar Meghwal.
+  ~ Unauthorized use or reproduction of this software or it's components prohibited by applicable law.
+  -->
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/windowBackground">
+
+    <TextView
+        android:id="@+id/tv_login_prompt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/secondary_padding"
+        android:layout_marginTop="@dimen/secondary_padding"
+        android:layout_marginEnd="@dimen/secondary_padding"
+        android:text="@string/label_phone_number"
+        style="@style/SparkChat_SecondaryBoldTextTheme_MultiLine"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_country_code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/secondary_padding"
+        android:layout_marginTop="@dimen/medium_padding"
+        android:layout_marginEnd="@dimen/primary_padding"
+        android:gravity="center"
+        android:text="@string/default_country_code"
+        style="@style/SparkChat_FormEditText"
+        app:layout_constraintEnd_toStartOf="@id/ed_login_input"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_login_prompt" />
+
+    <EditText
+        android:id="@+id/ed_login_input"
+        style="@style/SparkChat_FormEditText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/medium_padding"
+        android:layout_marginEnd="@dimen/secondary_padding"
+        android:autofillHints="phone"
+        android:hint="@string/label_number"
+        android:inputType="phone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/tv_country_code"
+        app:layout_constraintTop_toBottomOf="@id/tv_login_prompt" />
+
+    <org.ishwar.sparkchat.views.LoadingTextView
+        android:id="@+id/bttn_login"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/secondary_padding"
+        android:layout_marginTop="@dimen/secondary_padding"
+        android:layout_marginEnd="@dimen/secondary_padding"
+        android:text="@string/label_continue"
+        style="@style/SparkChat_ButtonTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ed_login_input" />
+
+    <org.ishwar.sparkchat.views.LoadingTextView
+        android:id="@+id/bttn_back"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/secondary_padding"
+        android:layout_marginTop="@dimen/secondary_padding"
+        android:layout_marginEnd="@dimen/secondary_padding"
+        android:text="@string/label_back"
+        style="@style/SparkChat_ButtonTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/bttn_login" />
+
+    <FrameLayout
+        android:id="@+id/tv_view_term_and_conditions"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/medium_padding"
+        android:layout_marginRight="@dimen/medium_padding"
+        android:layout_marginBottom="@dimen/medium_padding"
+        android:background="@color/warning_color"
+        android:foreground="@drawable/bg_ripple"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="@dimen/medium_padding"
+        android:paddingTop="@dimen/medium_padding"
+        android:paddingEnd="@dimen/medium_padding"
+        android:paddingBottom="@dimen/medium_padding"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+           android:drawableStart="@drawable/ic_info"
+            android:drawablePadding="@dimen/primary_padding"
+            android:fontFamily="@font/roboto_medium"
+            android:gravity="center_vertical|start"
+            android:text="@string/warning_term_and_conditions_intro"
+            android:textColor="@color/black"
+            android:textSize="@dimen/secondary_text_size" />
+
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

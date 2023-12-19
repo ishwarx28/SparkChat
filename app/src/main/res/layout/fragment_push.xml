@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2023 Ishwar Meghwal
+  ~
+  ~ All Right Reserved.
+  ~
+  ~ SparkChat is a registered trademark of Ishwar Meghwal.
+  ~ Unauthorized use or reproduction of this software or it's components prohibited by applicable law.
+  -->
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/windowBackground"
+    android:clickable="true"
+    android:focusable="true"
+    android:padding="@dimen/secondary_padding">
+
+    <TextView
+        android:id="@+id/tv_your_name"
+        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:text="@string/warning_provide_genuine_name"
+        style="@style/SparkChat_SecondaryRegularTextTheme_MultiLine"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <EditText
+        android:id="@+id/ed_your_name"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:hint="@string/label_name_hint"
+        style="@style/SparkChat_FormEditText"
+        android:layout_marginTop="@dimen/secondary_padding"
+        android:inputType="text|textCapWords"
+        android:maxLength="@integer/maximum_name_length"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_your_name"
+        android:autofillHints="username" />
+
+    <TextView
+        android:id="@+id/bttn_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/secondary_padding"
+        android:text="@string/label_continue"
+        style="@style/SparkChat_ButtonTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/layout_pushview"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/windowBackground"
+        android:clickable="true"
+        android:elevation="2dp"
+        android:focusable="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="visible"
+        android:weightSum="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.60"
+            android:gravity="bottom|center_horizontal"
+            android:weightSum="1">
+
+            <ImageView
+                android:src="@mipmap/ic_launcher"
+                android:layout_width="match_parent"
+                android:layout_weight="0.50"
+                android:layout_height="0dp"
+                tools:ignore="ContentDescription" />
+
+        </LinearLayout>
+
+        <org.ishwar.sparkchat.views.LoadingTextView
+            android:id="@+id/tv_push_update"
+            android:layout_height="0dp"
+            android:layout_width="match_parent"
+            android:layout_weight="0.40"
+            android:padding="@dimen/secondary_padding"
+            android:textAllCaps="true"
+            android:text="@string/status_connecting"
+            style="@style/SparkChat_SecondaryRegularTextTheme_SingleLine"
+            android:gravity="bottom|center_horizontal"/>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

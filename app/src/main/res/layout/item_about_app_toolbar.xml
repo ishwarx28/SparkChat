@@ -1,0 +1,26 @@
+<!--
+  ~ Copyright (c) 2023 Ishwar Meghwal
+  ~
+  ~ All Right Reserved.
+  ~
+  ~ SparkChat is a registered trademark of Ishwar Meghwal.
+  ~ Unauthorized use or reproduction of this software or it's components prohibited by applicable law.
+  -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/container_home_toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_centerVertical="true"
+    android:layout_toEndOf="@id/menu_button"
+    android:minHeight="?attr/actionBarSize"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/toolbar_title"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:text="@string/label_about"
+        style="@style/SparkChat_ToolbarTitleTheme"
+        android:layout_centerVertical="true"/>
+</RelativeLayout>

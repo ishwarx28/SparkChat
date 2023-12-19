@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2023 Ishwar Meghwal
+  ~
+  ~ All Right Reserved.
+  ~
+  ~ SparkChat is a registered trademark of Ishwar Meghwal.
+  ~ Unauthorized use or reproduction of this software or it's components prohibited by applicable law.
+  -->
+
+<resources>
+    <color name="white">#FFFFFFFF</color>
+    <color name="black">#FF000000</color>
+
+    <color name="colorPrimary">#FF5E7CE1</color>
+    <color name="colorPrimaryDark">@color/colorPrimary</color>
+    <color name="colorSecondary">@color/colorPrimary</color>
+    <color name="colorAccent">@color/colorPrimary</color>
+    <color name="colorControlNormal">#FF6B6B6B</color>
+
+    <color name="windowBackground">@color/white</color>
+    <color name="navigationBarColor">@color/white</color>
+    <color name="secondaryNavigationBarColor">#FFEEEEEE</color>
+    <color name="statusBarColor">@color/white</color>
+    <color name="primaryTextColor">#FF393939</color>
+    <color name="secondaryTextColor">#5D6670</color>
+
+    <color name="warning_color">#FFFFE2BE</color>
+    <color name="toolbar_color">@color/white</color>
+    <color name="divider_color">#FFDBDBDB</color>
+    <color name="sliding_fade_color">#FFEEEEEE</color>
+</resources>

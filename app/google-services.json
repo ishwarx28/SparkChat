@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "68484762350",
+    "firebase_url": "https://sparkchat-28-default-rtdb.firebaseio.com",
+    "project_id": "sparkchat-28",
+    "storage_bucket": "sparkchat-28.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:68484762350:android:4d9f1b3744e62ebe1141ff",
+        "android_client_info": {
+          "package_name": "org.ishwar.sparkchat"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC6TiY2js52pWXmUc5wa90xLQ_pDGKalPA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

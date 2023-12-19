@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2023 Ishwar Meghwal
+  ~
+  ~ All Right Reserved.
+  ~
+  ~ SparkChat is a registered trademark of Ishwar Meghwal.
+  ~ Unauthorized use or reproduction of this software or it's components prohibited by applicable law.
+  -->
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="?attr/actionBarSize"
+    android:layout_gravity="center"
+    android:gravity="center_vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_vertical"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/toolbar_title"
+            style="@style/SparkChat_PrimaryMediumTextTheme_SingleLine"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="bottom"
+            android:includeFontPadding="false"
+            android:lineSpacingExtra="0dp"
+            android:text="@string/label_deleted_user" />
+
+        <org.ishwar.sparkchat.views.LoadingTextView
+            android:id="@+id/toolbar_subtitle"
+            style="@style/SparkChat_SecondaryRegularTextTheme_SingleLine"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/status_user_deleted" />
+
+    </LinearLayout>
+
+    <org.ishwar.sparkchat.views.CircleImageView
+        android:id="@+id/toolbar_icon"
+        android:layout_width="?attr/actionBarSize"
+        android:layout_height="match_parent"
+        android:src="@drawable/profile_img_holder"
+        android:layout_marginTop="@dimen/profile_image_margin"
+        android:layout_marginBottom="@dimen/profile_image_margin"
+        android:layout_marginStart="@dimen/profile_image_margin"
+        android:layout_marginEnd="@dimen/medium_padding"
+        app:civ_border_width="0dp"/>
+
+</LinearLayout>
+

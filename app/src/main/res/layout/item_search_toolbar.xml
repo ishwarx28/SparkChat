@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:minHeight="?attr/actionBarSize"
+	android:orientation="horizontal"
+	android:layout_centerVertical="true"
+	android:layout_toEndOf="@id/menu_button">
+
+	<ImageView
+		android:id="@+id/clear_button"
+		android:layout_height="wrap_content"
+		android:layout_width="wrap_content"
+		android:layout_marginStart="@dimen/medium_padding"
+		android:layout_marginEnd="@dimen/medium_padding"
+		android:visibility="gone"
+		android:padding="@dimen/primary_padding"
+		android:src="@drawable/ic_clear"
+		android:background="@drawable/bg_icon_ripple"
+		android:layout_centerVertical="true"
+		android:layout_alignParentEnd="true"
+		tools:ignore="ContentDescription" />
+
+	<org.ishwar.sparkchat.views.AutoCompletionEditText
+		android:id="@+id/ed_search"
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:paddingVertical="@dimen/primary_padding"
+		android:textAppearance="@style/EditTextStyle"
+		android:singleLine="true"
+		android:background="@null"
+		android:hint="@string/label_search"
+		android:gravity="center_vertical"
+		android:layout_centerVertical="true"
+		android:layout_toStartOf="@id/clear_button"
+		android:layout_toEndOf="@id/menu_button"
+        android:maxLength="@integer/maximum_name_length"
+		android:inputType="textPersonName"
+		tools:ignore="NotSibling" />
+
+</RelativeLayout>
+

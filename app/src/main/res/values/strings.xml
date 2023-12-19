@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2023 Ishwar Meghwal
+  ~
+  ~ All Right Reserved.
+  ~
+  ~ SparkChat is a registered trademark of Ishwar Meghwal.
+  ~ Unauthorized use or reproduction of this software or it's components prohibited by applicable law.
+  -->
+
+<resources>
+
+    <string name="app_name">SparkChat</string>
+    <string name="app_version">1.0</string>
+    <string name="app_developer_name">Ishwar Meghwal</string>
+    <string name="app_developer_gmail_address">mrdev.288@gmail.com</string>
+    
+    <string name="default_country">India</string>
+    <string name="default_country_code">+91</string>
+   
+    <string name="format_connection_counts">Chats: %1$d | Groups: %2$d</string>
+    
+    <string name="label_terms_and_privacy_policy">Terms and Privacy policy</string>
+    <string name="label_report_an_issue">Report an Issue</string>
+    <string name="label_feedback">Feedback</string>
+    <string name="label_about">About</string>
+    <string name="label_version">Version</string>
+    <string name="label_name_hint">Name</string>
+    <string name="label_your_name">Your name</string>
+    <string name="label_app_data">App data</string>
+    <string name="label_manage_data">Manage your data</string>
+	<string name="label_deleted_user">Deleted user</string>
+    <string name="label_number">Number</string>
+    <string name="label_phone_number">Phone Number</string>
+    <string name="label_verification_code">Verification code</string>
+	<string name="label_search">Search</string>
+    <string name="label_accept">Accept</string>
+    <string name="label_read_more">Read more</string>
+    <string name="label_got_it">Got it</string>
+    <string name="label_continue">Continue</string>
+    <string name="label_verify">Verify</string>
+    <string name="label_verifying">Verifying...</string>
+    <string name="label_exit">Exit</string>
+    <string name="label_report">Report</string>
+    <string name="label_contact_support">Contact Us</string>
+	<string name="label_back">Go back</string>
+    <string name="label_share">Share</string>
+    <string name="label_share_app">Share App</string>
+    <string name="label_message">Message</string>
+    
+    <string name="warning_provide_genuine_name">Please provide your genuine name to ensure effective communication and for better assistance. We kindly ask you to refrain from using offensive or inappropriate names, as doing so may result in the suspension or termination of your account. Your cooperation is greatly appreciated.</string>
+    <string name="warning_first_message_to_oneself">Tap to message yourself!</string>
+    <string name="warning_term_and_conditions_intro">Welcome to SparkChat! Prepare for a mesmerizing mix of simplicity and speed, but first, agree to our terms and conditions!</string>
+    <string name="warning_term_and_conditions">By clicking the "Accept" button, you agree to abide by these terms and privacy policy. Please read the full Terms of Service and Privacy Policy below for more details or contact us</string>
+    <string name="warning_app_intro">SparkChat is the simplest, fastest, and easiest way to chat with your friends. Send text messages, create and join groups, all with just a few taps.\nShare SparkChat with your friends and let them experience the simplicity, speed, and ease of use for themselves.</string>
+    <string name="warning_error_invalid_phone_number">Please enter a valid phone number, we can not send a carrier pigeon to deliver your verification code.</string>
+    <string name="warning_error_invalid_otp">Invalid OTP! Please make sure you have entered the correct code. If you continue to enter invalid OTPs, your device may be temporarily banned from logging in for security reasons."</string>
+    <string name="warning_error_signing_in">Uh-oh! The sign-in genie seems to be taking a nap. Wake them up with another attempt, and hopefully, they\'ll grant you access to the chat kingdom. Don\'t give up!</string>
+    <string name="warning_error_verification_quota_limit">"Whoa there, cowboy! You've exceeded your daily limit of verification attempts. Take a break and come back later!"</string>
+    <string name="warning_error_verification_failed">"Verification failed. Maybe you should try again? Or check your internet connection? Just a thought..."</string>
+    <string name="warning_error_unexpected">An error occurred.</string>
+    <string name="warning_error_network">Please check your internet connection and try again.</string>
+    <string name="warning_error_token_expired">Your login session has expired. Please log in again.</string>
+    <string name="warning_otp">We need to verify this number (%1$s) kindly enter verification code that has been sent to your respected number.</string>
+	
+    <string name="status_user_online">Active</string>
+    <string name="status_user_offline_for_59min">Active %1$d min ago</string>
+    <string name="status_user_offline">Seen on %1$s</string>
+    <string name="status_user_typing">Typing...</string>
+    <string name="status_user_own_chat">Message youself</string>
+    <string name="status_user_deleted">User unavailable</string>
+    <string name="status_user_updating">Upating user info...</string>
+    <string name="status_user_updating_metadata">Updating metadata...</string>
+    <string name="status_otp_sending">Sending OTP...</string>
+    <string name="status_connecting">Connecting...</string>
+    
+</resources>

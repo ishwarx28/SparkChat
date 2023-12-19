@@ -1,0 +1,25 @@
+<!--
+  ~ Copyright (c) 2023 Ishwar Meghwal
+  ~
+  ~ All Right Reserved.
+  ~
+  ~ SparkChat is a registered trademark of Ishwar Meghwal.
+  ~ Unauthorized use or reproduction of this software or it's components prohibited by applicable law.
+  -->
+
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="primary_padding">6dp</dimen>
+    <dimen name="medium_padding">12dp</dimen>
+    <dimen name="secondary_padding">22dp</dimen>
+
+    <dimen name="height_divider" tools:ignore="PxUsage">2px</dimen>
+    <dimen name="profile_image_margin">8dp</dimen>
+
+    <dimen name="primary_text_size">16sp</dimen>
+    <dimen name="medium_text_size">17sp</dimen>
+    <dimen name="secondary_text_size">15sp</dimen>
+    <dimen name="logo_text_size">20sp</dimen>
+    <dimen name="primary_bttn_text_size">18sp</dimen>
+    <dimen name="timestamp_text_size">12sp</dimen>
+</resources>
